@@ -1,0 +1,20 @@
+@import'./size-data';
+@import'./font-data';
+@import '../font-utils';
+
+@function _gen-theme($primary, $accent, $warn, $isDark:false){
+  @if( $isDark ){
+    @return mat-dark-theme(
+      mat-palette($primary),
+      mat-palette($accent, A200, A100, A400),
+      mat-palette($warn)
+    );
+  }
+  @else {
+    @return mat-light-theme(
+      mat-palette($primary),
+      mat-palette($accent, A200, A100, A400),
+      mat-palette($warn)
+    );
+  }
+}

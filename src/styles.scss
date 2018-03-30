@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+  color: #ffffff;
+}
+
+@import './themes/theming';
+
+// Couldn't get to use the theme yet
+@include app-default-theme(false);

@@ -1,0 +1,27 @@
+mat-card {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 840px;
+  height: 420px;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  mat-card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  button {
+    background-color: #15b9dc;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+  }
+}

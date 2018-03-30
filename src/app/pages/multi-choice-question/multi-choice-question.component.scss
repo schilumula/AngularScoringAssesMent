@@ -1,0 +1,80 @@
+mat-card {
+  border-radius: 10px;
+  padding-bottom: 40px;
+  width: 840px;
+  height: 420px;
+
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  mat-card-header {
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 30px;
+
+    mat-card-title {
+      margin: 0;
+      font-size: 60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .qheader {
+      font-size: 30px;
+      padding-bottom: 30px;
+    }
+
+    .question {
+      font-size: 20px;
+      padding-bottom: 30px;
+    }
+  }
+
+  mat-card-content {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    button {
+      width: 150px;
+      height: 80px;
+      background-color: #9896a3;
+      border-radius: 8px;
+      margin: 20px;
+
+      &:hover {
+        background-color: #15b9dc;
+        color: #ffffff;
+      }
+
+      &:active &:focus {
+        background-color: #15b9dc;
+        color: #ffffff;
+      }
+    }
+  }
+
+  mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    .btn-next {
+      background-color: #945252;
+    }
+  }
+
+  .selected {
+    background-color: #15b9dc;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+@import './questions/theme-main';
+
+@mixin app-default-theme($dark) {
+  @include mat-core();
+  $question-theme: _gen-theme($mat-light-blue, $mat-orange, $mat-red, $dark);
+  @include angular-material-theme($question-theme);
+  @include custom-theme($question-theme);
+}
+
+@mixin custom-theme($theme) {
+  // @include ml-file-tree-theme(theme);
+}

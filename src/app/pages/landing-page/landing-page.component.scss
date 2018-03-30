@@ -1,0 +1,21 @@
+mat-card {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 840px;
+  height: 420px;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    background-color: #15b9dc;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+  }
+}

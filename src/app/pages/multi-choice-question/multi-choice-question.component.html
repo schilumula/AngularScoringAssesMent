@@ -1,0 +1,15 @@
+<mat-card>
+    <div class="navBar">
+        <img src="assets/img/prev.jpg" (click)="onPreviousClick()">
+        <p>Step {{currentStep}} of {{totalSteps}}</p>
+    </div>
+    <mat-card-header>
+        <mat-card-title class="qheader">{{currentQuestion?.heading}}</mat-card-title>
+        <mat-card-title class="question">{{currentQuestion?.question}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+            <div  *ngFor="let ans of currentQuestion?.choices">
+                <button  #choices  [ngStyle]="{ 'background-color': getBgColor(currentQuestion, ans)}" mat-button (click)="onResponseSelect(currentQuestion, ans)">{{ans.choice}}</button>
+            </div>
+    </mat-card-content>
+</mat-card>

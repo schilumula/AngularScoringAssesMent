@@ -1,0 +1,25 @@
+
+$question-base-font-size: 14;
+$question-base-line-height: 1.6;
+
+$question-sizes: (
+  row: round( $question-base-font-size * $question-base-line-height ),
+  nudge: 3,
+  borders: (
+    l: 4,
+    m: 2,
+    s: 1
+  ),
+  radius: (
+    l: 10,
+    m: 5,
+    s: 3
+  ),
+  z: (
+    dropdown: 1001,
+    debug-overlay: 1000,
+    modal: 999,
+    side-menu: 700
+  )
+);
+

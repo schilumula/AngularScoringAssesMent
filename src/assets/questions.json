@@ -1,0 +1,38 @@
+{
+    "questions": 
+    [
+        {
+            "id": 1,
+            "heading": "Mathematics - Algebra",
+            "question": " A number is increased by 2 and then multiplied by 3. The result is 24. What is this number?",
+            "choices": [
+                { "id": 1, "choice": "4", "isValid": 0},
+                { "id": 2, "choice": "6", "isValid": 1},
+                { "id": 3, "choice": "8", "isValid": 0},
+                { "id": 4, "choice": "10", "isValid": 0}
+            ]
+        },
+        {
+            "id": 2,
+            "heading": "Mathematics - Algebra",
+            "question": "(x – 2) / 4 – (3x + 5) / 7 = -3, x = ?",
+            "choices": [
+                { "id": 1, "choice": "6", "isValid": 0},
+                { "id": 2, "choice": "7", "isValid": 0},
+                { "id": 3, "choice": "10", "isValid": 1},
+                { "id": 4, "choice": "13", "isValid": 0}
+            ]
+        },
+        {
+            "id": 3,
+            "heading": "Computer Science - Web Development",
+            "question": "Web pages are written using ?",
+            "choices": [
+                { "id": 1, "choice": "FTP", "isValid": 0},
+                { "id": 2, "choice": "HTTP", "isValid": 0},
+                { "id": 3, "choice": "HTML", "isValid": 1},
+                { "id": 4, "choice": "URL", "isValid": 0}
+            ]
+        }
+    ]
+}

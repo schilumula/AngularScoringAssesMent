@@ -1,0 +1,33 @@
+@function question-theme-property($map, $submap, $key){
+  @return map-get( map-get($map, $submap), $key );
+}
+
+@function question-font-face($name){
+  @return question-theme-property(map-get($question-fonts, faces, $name));
+}
+
+@function question-font-weight($weight){
+  @return question-theme-property($question-fonts, weights, $weight);
+}
+
+@function question-font-size($size){
+  @return 0px + question-theme-property($question-fonts, sizes, $size);
+}
+
+@function question-line-height($height){
+  @return question-theme-property($question-fonts, line-height, $height);
+}
+
+@mixin question-base-text($theme){
+  $foreground: question-get($theme, foreground);
+
+  @include question-text(base);
+  font-family: question-font-face(body);
+  color: #ffffff;
+}
+
+@mixin question-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
